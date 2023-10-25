@@ -1,0 +1,18 @@
+:root {
+  --primary-blue: #66d9e8;
+  --secondary-blue: #e3fafc;
+  --primary-grey: #f1f3f5;
+  --secondary-grey: #ced4da;
+  --text-color-light: #f8f9fa;
+  --text-color-dark: #343a40;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  color: var(--text-color-dark);
+}

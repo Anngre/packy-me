@@ -1,0 +1,14 @@
+.navbar {
+  background-color: var(--primary-blue);
+  height: 80px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  letter-spacing: 4px;
+}

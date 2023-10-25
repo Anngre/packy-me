@@ -1,0 +1,12 @@
+.container {
+  background-color: var(--secondary-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 40px;
+}
