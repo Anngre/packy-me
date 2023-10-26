@@ -18,3 +18,9 @@ select {
   padding: 5px;
   border-radius: 12px;
 }
+
+@media (max-width: 1000px) {
+  .form {
+    flex-direction: column;
+  }
+}

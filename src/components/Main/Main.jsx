@@ -10,7 +10,7 @@ function Main() {
     <div className={styles.container}>
       <h1>Add your item to the bag!</h1>
       <Form items={items} setItems={setItems} />
-      {items.length !== 0 ? <List items={items} /> : null}
+      {items.length !== 0 ? <List items={items} setItems={setItems} /> : null}
     </div>
   );
 }
