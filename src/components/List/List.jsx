@@ -1,6 +1,6 @@
 import styles from "./List.module.css";
 import Button from "../Button/Button";
-import { useEffect } from "react";
+import { useState } from "react";
 
 function getColor(category) {
   if (category === "clothes") {
@@ -23,21 +23,24 @@ function getColor(category) {
   }
 }
 function List({ items, setItems }) {
+  const [isGroupedList, setIsGroupedList] = useState(false);
+  const groupedItems = isGroupedList
+    ? [...items].sort((a, b) => {
+        if (a.category < b.category) return -1;
+        if (b.category < a.category) return 1;
+        return 0;
+      })
+    : null;
+
+  const displayItems = isGroupedList ? groupedItems : items;
+
   function removeItem(id) {
     const newItems = items.filter((item) => item.id !== id);
     setItems(newItems);
   }
 
   function groupItems() {
-    const itemsToGroup = [...items];
-
-    itemsToGroup.sort((a, b) => {
-      if (a.category < b.category) return -1;
-      if (b.category < a.category) return 1;
-      return 0;
-    });
-
-    setItems(itemsToGroup);
+    setIsGroupedList((state) => !state);
   }
 
   return (
@@ -45,7 +48,7 @@ function List({ items, setItems }) {
       <div className={styles.groupButtonBox}>
         <Button text="group" onClick={groupItems}></Button>
       </div>
-      {items.map((item, i) => {
+      {displayItems.map((item, i) => {
         return (
           <li className={styles.listItem} key={i}>
             <input type="checkbox" className={styles.checkbox} />
