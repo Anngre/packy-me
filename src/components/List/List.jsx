@@ -45,9 +45,11 @@ function List({ items, setItems }) {
 
   return (
     <ul className={styles.list}>
-      <div className={styles.groupButtonBox}>
-        <Button text="group" onClick={groupItems}></Button>
-      </div>
+      {items.length > 1 ? (
+        <div className={styles.groupButtonBox}>
+          <Button text="group" onClick={groupItems}></Button>
+        </div>
+      ) : null}
       {displayItems.map((item, i) => {
         return (
           <li className={styles.listItem} key={i}>

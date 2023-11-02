@@ -1,10 +1,19 @@
 .container {
-  background-color: var(--secondary-blue);
   min-height: 100vh;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.blueTheme {
+  background-color: var(--secondary-blue);
+}
+.greenTheme {
+  background-color: var(--secondary-green);
+}
+.yellowTheme {
+  background-color: var(--secondary-yellow);
 }
 
 h1 {

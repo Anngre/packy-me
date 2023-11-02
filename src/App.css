@@ -1,6 +1,10 @@
 :root {
   --primary-blue: #66d9e8;
   --secondary-blue: #e3fafc;
+  --primary-green: #94d82d;
+  --secondary-green: #d8f5a2;
+  --primary-yellow: #fcc419;
+  --secondary-yellow: #fff3bf;
   --primary-grey: #f1f3f5;
   --secondary-grey: #ced4da;
   --text-color-light: #f8f9fa;

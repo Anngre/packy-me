@@ -1,9 +1,18 @@
 .navbar {
-  background-color: var(--primary-blue);
   height: 80px;
   padding: 20px 40px;
   display: flex;
   align-items: center;
+}
+
+.blueTheme {
+  background-color: var(--primary-blue);
+}
+.greenTheme {
+  background-color: var(--primary-green);
+}
+.yellowTheme {
+  background-color: var(--primary-yellow);
 }
 
 .logo {
@@ -11,4 +20,29 @@
   text-transform: uppercase;
   color: var(--text-color-light);
   letter-spacing: 4px;
+}
+
+.buttonsBox {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttonGreen {
+  background-color: var(--secondary-green);
+}
+
+.buttonBlue {
+  background-color: var(--secondary-blue);
+}
+
+.buttonYellow {
+  background-color: var(--secondary-yellow);
 }

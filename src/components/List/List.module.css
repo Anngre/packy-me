@@ -3,7 +3,7 @@
   background-color: white;
   margin-top: 20px;
   margin-bottom: 40px;
-  padding: 20px 40px;
+  padding: 40px 40px;
   list-style: none;
   box-shadow: 0px 0px 15px -9px rgba(62, 75, 75, 1);
 }
@@ -47,5 +47,5 @@
 .groupButtonBox {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 40px;
 }
