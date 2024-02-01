@@ -46,3 +46,9 @@
 .buttonYellow {
   background-color: var(--secondary-yellow);
 }
+
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 24px;
+  }
+}

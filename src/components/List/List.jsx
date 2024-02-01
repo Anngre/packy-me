@@ -43,6 +43,16 @@ function List({ items, setItems }) {
     setIsGroupedList((state) => !state);
   }
 
+  function handleCheckboxChange(itemId) {
+    setItems(
+      items.map((item) => {
+        return itemId === item.id
+          ? { ...item, isChecked: !item.isChecked }
+          : item;
+      })
+    );
+  }
+
   return (
     <ul className={styles.list}>
       {items.length > 1 ? (
@@ -53,7 +63,12 @@ function List({ items, setItems }) {
       {displayItems.map((item, i) => {
         return (
           <li className={styles.listItem} key={i}>
-            <input type="checkbox" className={styles.checkbox} />
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              checked={item.isChecked}
+              onChange={() => handleCheckboxChange(item.id)}
+            />
             <span className={styles.itemName}>{item.name}</span>
             <span className={styles.itemAmount}>{item.amount} pcs </span>
             <span

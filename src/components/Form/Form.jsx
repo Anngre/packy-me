@@ -8,7 +8,7 @@ function Form({ setItems, items }) {
   const [category, setCategory] = useState("");
 
   function addItem(name, amount, category) {
-    setItems([...items, { name, amount, category, id: Date.now() }]);
+    setItems([...items, { name, amount, category, isChecked: false, id: Date.now() }]);
   }
 
   function handleSubmit(e) {
