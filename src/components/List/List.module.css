@@ -1,9 +1,12 @@
 .list {
   position: relative;
+  max-height: 500px;
+  overflow-y: scroll;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 40px;
   padding: 40px 40px;
+  border-radius: 20px;
   list-style: none;
   box-shadow: 0px 0px 15px -9px rgba(62, 75, 75, 1);
 }
