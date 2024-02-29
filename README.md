@@ -1,8 +1,6 @@
-# React + Vite
+This app will help you make your holiday bag full. 
+Built with the latest version of React following the best practices. 
+The user's data is stored locally with the Local Storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can check it in here:
+https://packy-me.netlify.app/
